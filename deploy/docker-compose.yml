@@ -1,0 +1,64 @@
+# docker stack deploy -c docker-compose.yml simple
+
+version: "3.8"
+services:
+  nginx:
+    image: jonasal/nginx-certbot:latest
+    environment:
+      CERTBOT_EMAIL: "tsop324@gmail.com"
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx_secrets:/etc/letsencrypt
+      - ./nginx_conf.d:/etc/nginx/user_conf.d
+        
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    
+    
+  spring:
+    image: ttop324/spring.stock:${VER:-latest}
+    ports:
+      - 8080:8080
+    volumes:
+      - ./config:/config
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - redis  
+    deploy:
+      mode: replicated
+      replicas: ${REPLICAS:-1}
+      update_config:
+        parallelism: 1
+        order: start-first
+        delay: 10s
+        failure_action: rollback
+    
+    
+  nuxt:
+    image: ttop324/nuxt.stock:${VER:-latest}
+    ports:
+      - 3000:3000
+    depends_on:
+      - spring
+    environment:
+      - TARGET_PROXY_URL=http://spring:8080/
+    deploy:
+      mode: replicated
+      replicas: ${REPLICAS:-1}
+      update_config:
+        parallelism: 1
+        order: start-first
+        delay: 10s
+        failure_action: rollback
+        
+        
+  fastai:
+    image: ttop324/fastai.stock:latest
+    volumes:
+      - ./vol:/app:z
+      
