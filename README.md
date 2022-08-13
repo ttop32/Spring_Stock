@@ -81,8 +81,3 @@ Check site from [website](https://springstock.ddnsfree.com/)
 - [Stanford researchers have developed an AI model, StockBot](https://newstechok.com/stanford-researchers-have-developed-an-artificial-intelligence-ai-model-stockbot-that-uses-lstm-to-predict-the-prices-of-stocks-with-earnings-higher-than-the-most-aggressive-etfs/88861/)    
 
 
-
-
-
-expectedEarningPerDayWithPred:0.1536%
-expectedEarningPerDayWithAllBuy:-0.1043%
