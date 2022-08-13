@@ -30,14 +30,15 @@ Check site from [website](https://springstock.ddnsfree.com/)
     - expected earning when all buy                  :  -0.10% per day   
     - (this does not include transaction fee(tax))   
     ```
-              precision    recall  f1-score   support  
+              precision    recall  f1-score   support   
+    
+       False       0.59      0.88      0.71     50376   
+        True       0.46      0.14      0.21     35269   
    
-       False       0.59      0.88      0.71     50376  
-        True       0.46      0.14      0.21     35269  
-   
-    accuracy                           0.58     85645  
-   macro avg       0.52      0.51      0.46     85645  
-weighted avg       0.54      0.58      0.51     85645  
+    accuracy                           0.58     85645    
+   macro avg       0.52      0.51      0.46     85645   
+weighted avg       0.54      0.58      0.51     85645   
+  
     ```
   
     
