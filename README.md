@@ -26,9 +26,8 @@ Check site from [website](https://springstock.ddnsfree.com/)
   - model structure (LSTM, {'n_layers':1, 'bidirectional': True,"rnn_dropout":0.3,"fc_dropout":0.9})  
   - mse loss 0.000741	 
   - When use it as category classifcation, up down over 0.2% increse than prev close price  
-    - expected earning when only buy true prediected :   0.15% per day   
-    - expected earning when all buy                  :  -0.10% per day   
-    - (this does not include transaction fee(tax))   
+    - expected earning when only buy true prediected :   0.15% per day   (without transaction fee(tax))
+    - expected earning when all buy                  :  -0.10% per day   (without transaction fee(tax))
     ```
                   precision    recall  f1-score   support   
 
@@ -39,13 +38,6 @@ Check site from [website](https://springstock.ddnsfree.com/)
        macro avg       0.52      0.51      0.46     85645   
     weighted avg       0.54      0.58      0.51     85645   
     ```
-  
-    
-    
-    
-    
-# Nuxt run
-yarn dev  
        
 # Dependncy
 - Spring 
