@@ -22,7 +22,7 @@ Check site from [website](https://springstock.ddnsfree.com/)
   - trained data KOSPI between '2014-01-01' to '2022-01-01'  
   - test data KOSPI between  '2022-01-01' to '2022-07-01'  
 
-- reggression lstm   
+- regression lstm   
   - model structure (LSTM, {'n_layers':1, 'bidirectional': True,"rnn_dropout":0.3,"fc_dropout":0.9})  
   - mse loss 0.000741	 
   - When use it as category classifcation, up down over 0.2% increse than prev close price  
