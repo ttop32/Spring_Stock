@@ -10,7 +10,8 @@ Check site from [website](https://springstock.ddnsfree.com/)
 ![result](doc/screenshot_3.png)    
 ![result](doc/screenshot_4.png)    
 ![result](doc/screenshot_5.png)    
-![result](doc/screenshot_6.png)    
+![result](doc/screenshot_6.png)  
+![result](doc/screenshot_7.png)    
 ![result](doc/flow.jpg)    
 
 
