@@ -1,0 +1,16 @@
+
+scikit-learn
+scipy
+matplotlib
+beautifulsoup4 
+pykrx
+finance-datareader
+pandas-ta
+tqdm
+ipywidgets  
+parmap
+
+tsai==0.2.23
+sktime==0.5.3
+
+ 

@@ -1,0 +1,6 @@
+version: "3.8"
+services:    
+  fastai:
+    image: ttop324/fastai.stock:latest
+    volumes:
+      - ./vol:/app:z
