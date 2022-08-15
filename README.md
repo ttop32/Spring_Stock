@@ -21,11 +21,11 @@ Check site from [website](https://springstock.ddnsfree.com/)
   - trained data KOSPI between '2014-01-01' to '2022-01-01'  
   - test data KOSPI between  '2022-01-01' to '2022-07-01'  
 
-- regression lstm   
+- regression LSTM   
   - model structure (LSTM, {'n_layers':1, 'bidirectional': True,"rnn_dropout":0.3,"fc_dropout":0.9})  
   - mse loss 0.000741	 
-  - When use it as category classifcation, up down over 0.2% increse than prev close price  
-    - expected earning when only buy true prediected :   0.15% per day   (without transaction fee(tax))
+  - When use it as category classification, up down over 0.2% increase than prev close price  
+    - expected earning when only buy true predicted :   0.15% per day   (without transaction fee(tax))
     - expected earning when all buy                  :  -0.10% per day   (without transaction fee(tax))
     ```
                   precision    recall  f1-score   support   
