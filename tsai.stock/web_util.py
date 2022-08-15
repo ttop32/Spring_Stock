@@ -15,7 +15,7 @@ from tqdm import tqdm
 import json
 
 
-baseUrl="http://front.ttop324.ddnsfree.com/api/"
+baseUrl=""
 loginUrl=baseUrl+"member/login"
 statusUrl=baseUrl+'member'
 stockAddUrl=baseUrl+"stock/editor/"
