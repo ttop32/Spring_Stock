@@ -1,7 +1,7 @@
 # Spring_Stock
 Personal study project for getting used to java spring  
 Stock prediction web site  
-Predict KOSPI close price for next day  
+LSTM model trained for predict next day KOSPI close price   
 Check site from [website](https://springstock.ddnsfree.com/)      
 
 # Result   
